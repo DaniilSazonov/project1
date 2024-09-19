@@ -7,5 +7,5 @@ main.o: main.cpp hello.cpp
 h.o: h.cpp
 	g++ h.cpp
 clean:
-	rm -f *.o makefile
+	rm -rf *.o makefile
 
