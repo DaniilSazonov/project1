@@ -1,0 +1,11 @@
+all: makefile
+
+makefile: main.o h.o
+	g++ main.cpp hello.cpp -o makefile
+main.o: main.cpp hello.cpp
+	g++ main.cpp hello.cpp
+h.o: h.cpp
+	g++ h.cpp
+clean:
+	rm -f *.o makefile
+
